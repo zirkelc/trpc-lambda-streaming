@@ -9,6 +9,15 @@ functions:
   hello:
     handler: src/server.handler
     url:
+      cors: 
+        allowedOrigins:
+          - '*'
+        allowedMethods:
+          - GET
+          - POST
+        allowedHeaders:
+          - "*"
+          
       invokeMode: RESPONSE_STREAM
 
 plugins:
